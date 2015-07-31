@@ -50,7 +50,7 @@ public class KimYunA {
 		while (it2.hasNext()) {
 			// 맵 내부에서는 int가 기본형이라 올 수 없고 반드시 
 			// Integer(=기본형 int의 Wrapper래퍼클래스) 타입으로 와야 한다
-			Iterator i = (Iterator) it2.next();
+			Integer i = (Integer) it2.next();
 			total += i.intValue(); // 각 선숟ㄹ의 점수 합계
 		}
 		System.out.println("이번 대회 평균점수 :" + total/set.size());
